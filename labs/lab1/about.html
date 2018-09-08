@@ -12,24 +12,22 @@ in html
 <!-- This is the head -->
 <!-- All styles and javascript go inside the head -->
     <head>
-        <meta charset="utf-8" />
-        <title> Lab 1: Kevin Shofner's Personal Website</title>
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 
+        <meta charset="utf-8" />
+        <title> Lab 1: Kevin Shofner's Personal Website</title>
+        
         <style>
-             h1{
+        
+            h1{
                 font-family: "Pacifico", cursive;
                 font-size: 4em;
                 margin-bottom: 0px;
             }
-            
             h2 {
-                 
                 font-family: "Pacifico", cursive;
                 font-size: 4em;
                 margin-bottom: 0px;
-            
-            
             }
             hr {
                 width: 50%;
@@ -49,10 +47,32 @@ in html
                 text-align:center;
                 
             }
-           main{
-               text-align: center;
-           }
-            nav a {
+            div{
+                text-align: center;
+            }
+            table {
+                margin: 0px auto;
+            }
+            td{
+                padding-right: 10px;
+                font-size: 1.3em;
+            }
+            td strong {
+                color: orange;
+            }  
+            
+            #table-header {
+                background-color: #351a00;
+            }
+            
+            .table-row {
+                background-color: #753900;
+            }
+            ul {
+                text-align: left;
+                padding-left: 400px;
+            }
+             nav a {
                 padding: 15px;
                 padding-bottom: 4px;
                 font-size: 1.8em;
@@ -65,16 +85,9 @@ in html
                 transition: .5s;
             }
             #currentPage {
-                color:blue;
+                color: blue;
             }
-            div{
-                text-align: center;
-            }
-            figure {
-                width: 300px;
-                height: 250px;
-            }
-           
+            
             
         </style>
     </head>
@@ -92,8 +105,8 @@ in html
          <hr>
          
          <nav>
-             <a href = "index.html" id ="currentPage"> Home</a>  <!-- inline tag -->                    
-             <a href = "about.html"> About</a>
+             <a href = "index.html"> Home</a>  <!-- inline tag -->                    
+             <a href = "about.html" id ="currentPage"> About</a>
              <a href = "contactme.html"> Contact Me</a>
 
              
@@ -101,26 +114,40 @@ in html
          
          <main>
              
-             <figure>
-                 <img src = "img/Kevin_Shofner.png">
-                              </figure>
-
-                 
-             
-             <div>
-               <p>  Hello, and welcome to Kevin Shofner's portfolio! </p> </br>
-
-                 <p> I am pursuing a Computer Science Degree at CSUMB with my concentration being Software Engineering!</p> 
-                 
-                 <p> After earning my Bachelor's Degree, I want to work in the tech industry.</p> </br>
-             </div>
          </main>
         
         
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
         
-        <hr style = "width:70%; background-color:gray; height 20px">
+        <div id="content">
+            <table>
+                <tr id="table-header">
+                    <td><strong>Programming Language</strong></td>
+                    <td><strong> Years Experience</strong></td>
+                </tr>
+                <tr class="table-row">
+                    <td> Java</td>
+                    <td>1</td>
+                </tr>
+                <tr class ="table-row">
+                    <td>C++</td>
+                    <td>2</td>
+                </tr>
+                <tr class ="table-row">
+                    <td>C#</td>
+                    <td>0.5</td>
+                </tr>
+            </table>
+            <ul>
+                <li>Video games: One of my favorite hobbies is playing video games. I currently play on my PC the most.</li>
+                <li>Sports: I enjoy watching sports. My favorites are Basketball and Football</li>
+                <li>Music: I enjoy listening to most music, except country. </li>
+                <li>Cooking: I enjoy cooking delicious meals to enjoy.</li>
+            </ul>
+        </div>
+                <hr style = "width:70%; background-color:gray; height 20px">
+
         <footer style="color:red">
             
             &copy; 2018 Kevin Shofner <br />
