@@ -1,0 +1,46 @@
+
+
+
+
+h1, nav, details, footer {
+    text-align: center;
+}
+
+nav a {
+        padding: 15px;
+        padding-bottom: 4px;
+        font-size: 1.8em;
+        text-decoration: none;
+        color: red;
+        }
+            nav a:hover, #currentPage:hover {
+                border-bottom:4px;
+                font-size: 4em;
+                transition: .5s;
+            }
+#currentPage {
+    padding: 15px;
+    padding-bottom: 4px;
+    font-size: 1.8em;
+    text-decoration: none;
+    color: blue;
+}
+div{
+    float: left;
+}
+
+
+floater{
+    clear:both;
+}
+#LinuxPage {
+    border-radius: 30px;
+    background-color: #4dd5ff;
+    width: 700px;
+    height: 250px;
+}
+/* border-radius is a new css rule that has not been used in Lab 1 is source I found out how to do this https://www.w3schools.com/css/tryit.asp?filename=trycss3_border-radius*/
+
+#MacPage {
+    text-shadow: 3px 3px 10px blue;
+}
