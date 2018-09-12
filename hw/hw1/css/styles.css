@@ -44,3 +44,8 @@ floater{
 #header1, #header2 {
     text-shadow: 3px 3px 10px blue;
 }
+#hrFoot {
+    width:70%; 
+    background-color:gray; 
+  
+}
