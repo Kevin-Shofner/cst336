@@ -41,6 +41,6 @@ floater{
 }
 /* border-radius is a new css rule that has not been used in Lab 1 is source I found out how to do this https://www.w3schools.com/css/tryit.asp?filename=trycss3_border-radius*/
 
-#MacPage {
+#header1, #header2 {
     text-shadow: 3px 3px 10px blue;
 }
