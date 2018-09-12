@@ -43,6 +43,7 @@ floater{
 
 #header1, #header2 {
     text-shadow: 3px 3px 10px blue;
+    /* https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_text-shadow for text shadow reference */
 }
 #hrFoot {
     width:70%; 
