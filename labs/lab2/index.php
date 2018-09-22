@@ -34,14 +34,14 @@
          }       
 
         if($count == 0){
-             echo "<img id = 'reel1' src=\"img/$symbol.png\" alt='$symbol' title='".ucfirst($symbol)." ' width = '70' \>";
+             echo "<img id = 'reel1' src=\"img/$symbol.png\" alt='$symbol' title='".ucfirst($symbol)." ' width = '70' > ";
         }
         if($count == 1) {
-            echo "<img id = 'reel2' src=\"img/$symbol.png\" alt='$symbol' title='".ucfirst($symbol)." ' width = '70'\>";
+            echo "<img id = 'reel2' src=\"img/$symbol.png\" alt='$symbol' title='".ucfirst($symbol)." ' width = '70'> ";
 
         }
         if($count == 2) {
-            echo "<img id = 'reel3' src=\"img/$symbol.png\" alt='$symbol' title='".ucfirst($symbol)." ' width = '70'\>";
+            echo "<img id = 'reel3' src=\"img/$symbol.png\" alt='$symbol' title='".ucfirst($symbol)." ' width = '70'> ";
 
         }
        // echo "<img src=\"img/$symbol.png\" alt='$symbol' title='".ucfirst($symbol)."'\>";
@@ -85,26 +85,26 @@
                 
             
             } else{
-             echo "<br> </br>";
-                 echo "<br> </br>";
-                  echo "<br> </br>";
-                   echo "<br> </br>";
-                    echo "<br> </br>";
-                     echo "<br> </br>";
-                      echo "<br> </br>";
-            echo"<br> Try Again! </br>";
+             echo "<br> </br> ";
+                 echo "<br> </br> ";
+                  echo "<br> </br> ";
+                   echo "<br> </br> ";
+                    echo "<br> </br> ";
+                     echo "<br> </br> ";
+                      echo "<br> </br> ";
+            echo"<br> Try Again! </br> ";
         }
             
         }
         else{
-             echo "<br> </br>";
-                 echo "<br> </br>";
-                  echo "<br> </br>";
-                   echo "<br> </br>";
-                    echo "<br> </br>";
-                     echo "<br> </br>";
-                      echo "<br> </br>";
-            echo"<br> Try Again! </br>";
+             echo "<br> </br> ";
+                 echo "<br> </br> ";
+                  echo "<br> </br> ";
+                   echo "<br> </br> ";
+                    echo "<br> </br> ";
+                     echo "<br> </br> ";
+                      echo "<br> </br ";
+            echo"<br> Try Again! </br> ";
         }
 
         
