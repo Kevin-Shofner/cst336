@@ -73,38 +73,38 @@
                     case 3: $points = 1000;
                         break;
                 }
-                echo "<br> </br>";
-                 echo "<br> </br>";
-                  echo "<br> </br>";
-                   echo "<br> </br>";
-                    echo "<br> </br>";
-                     echo "<br> </br>";
-                      echo "<br> </br>";
+                echo "<br> ";
+                 echo "<br> ";
+                  echo "<br> ";
+                   echo "<br> ";
+                    echo "<br> ";
+                     echo "<br> ";
+                      echo "<br> ";
                       
-                echo "<br> Congratulations!!! You won $points points! </br>";
+                echo "<br> Congratulations!!! You won $points points! ";
                 
             
             } else{
-             echo "<br> </br> ";
-                 echo "<br> </br> ";
-                  echo "<br> </br> ";
-                   echo "<br> </br> ";
-                    echo "<br> </br> ";
-                     echo "<br> </br> ";
-                      echo "<br> </br> ";
-            echo"<br> Try Again! </br> ";
+             echo "<br>  ";
+                 echo "<br>  ";
+                  echo "<br>  ";
+                   echo "<br>  ";
+                    echo "<br> ";
+                     echo "<br>  ";
+                      echo "<br>  ";
+            echo"<br> Try Again!  ";
         }
             
         }
         else{
-             echo "<br> </br> ";
-                 echo "<br> </br> ";
-                  echo "<br> </br> ";
-                   echo "<br> </br> ";
-                    echo "<br> </br> ";
-                     echo "<br> </br> ";
-                      echo "<br> </br ";
-            echo"<br> Try Again! </br> ";
+             echo "<br>  ";
+                 echo "<br>  ";
+                  echo "<br> ";
+                   echo "<br> ";
+                    echo "<br> ";
+                     echo "<br> ";
+                      echo "<br>  ";
+            echo"<br> Try Again! ";
         }
 
         
