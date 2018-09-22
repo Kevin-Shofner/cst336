@@ -116,6 +116,8 @@
             <input type="submit" value="Spin"/>
         </form>
         
+        <footer>
+        </footer>
         </div>
     </body>
 </html>
