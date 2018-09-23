@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang ="en">
     <head>
         <title> 777 Slot Machine </title>
         <style>
@@ -80,6 +80,13 @@
                     echo "<br> ";
                      echo "<br> ";
                       echo "<br> ";
+                       echo "<br> ";
+                   echo "<br> ";
+                    echo "<br> ";
+                     echo "<br> ";
+                      echo "<br> ";
+                       echo "<br> ";
+                      echo "<br> ";
                       
                 echo "<br> Congratulations!!! You won $points points! ";
                 
@@ -92,6 +99,13 @@
                     echo "<br> ";
                      echo "<br>  ";
                       echo "<br>  ";
+                       echo "<br> ";
+                   echo "<br> ";
+                    echo "<br> ";
+                     echo "<br> ";
+                      echo "<br> ";
+                       echo "<br> ";
+                      echo "<br> ";
             echo"<br> Try Again!  ";
         }
             
@@ -104,6 +118,13 @@
                     echo "<br> ";
                      echo "<br> ";
                       echo "<br>  ";
+                       echo "<br> ";
+                   echo "<br> ";
+                    echo "<br> ";
+                     echo "<br> ";
+                      echo "<br> ";
+                       echo "<br> ";
+                      echo "<br> ";
             echo"<br> Try Again! ";
         }
 
