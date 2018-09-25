@@ -89,11 +89,11 @@ function chooseMeal($time){
         
     </body>
     
-    <footer id = "buddy" >
+    <footer>
         <br>
         <br>
         <br>
-        <img src ="img/buddy_verified.png" alt = "Buddy_verification" title="Buddy_verification">
+        <img src ="img/buddy_verified.png" id="buddy" alt = "Buddy_verification" title="Buddy_verification">
         
         <img  src ="img/csumb_logo.png" id = "csumb" alt = "CSUMB" title="CSUMB">
     </footer>
