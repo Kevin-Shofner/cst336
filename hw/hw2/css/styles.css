@@ -1,0 +1,50 @@
+h1{
+    color:blue;
+        text-align:center;
+
+
+}
+
+h2{
+    color:green;
+    text-align:center;
+}
+
+h3{
+    color:red;
+        text-align:center;
+
+}
+h4{
+    font-style: italic;
+        text-align:center;
+
+}
+
+
+body {
+    background-color: #afb1b5;
+
+    
+    position: absolute;
+    
+    right:500px;
+}
+
+#topText{
+    font-style: italic;
+    color: black;
+}
+
+#buddy{
+    position: absolute;
+    right: 500px;
+    width: 300px;
+}
+
+#csumb{
+    position:absolute;
+    left: 700px;
+    width :200px;
+}
+
