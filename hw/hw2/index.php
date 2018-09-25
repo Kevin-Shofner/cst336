@@ -87,7 +87,7 @@ function chooseMeal($time){
         
         
         
-    </body>
+    
     
     <footer>
         <br>
@@ -97,5 +97,5 @@ function chooseMeal($time){
         
         <img  src ="img/csumb_logo.png" id = "csumb" alt = "CSUMB" title="CSUMB">
     </footer>
-    
+    </body>
 </html>
