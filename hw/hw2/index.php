@@ -28,7 +28,7 @@ function chooseMeal($time){
         if($time == 0){
             echo "<img src =\"img/$tempFood.jpg\" alt ='$tempFood' title = '".ucfirst($tempFood)." '>";
             echo "<img src =\"img/$tempDrink.jpg\" alt ='$tempDrink' title = '".ucfirst($tempDrink)."'>";
-            echo "<h1> Breakfast you will have $tempFood with $tempDrink. <h1>";
+            echo "<h1> Breakfast you will have $tempFood with $tempDrink. </h1>";
         }
         if($time == 1){
             echo "<img src =\"img/$tempFood.jpg\" alt ='$tempFood' title = '".ucfirst($tempFood)." '>";
