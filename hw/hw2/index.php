@@ -48,7 +48,7 @@ function chooseMeal($time){
 
 
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <link href="css/styles.css" rel="stylesheet" type="text/css"/>
         <title>Your next 3 meals.</title>
