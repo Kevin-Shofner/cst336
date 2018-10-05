@@ -70,9 +70,21 @@ if ((isset($_GET["keyword"])) && (($_GET["keyword"] != "") ||($_GET["category"] 
         <form method="GET">
             
             <input type="text" name="keyword" size="15" placeholder="Keyword"/>
-            
-            <input type="radio" name="layout" value="horizontal"> Horizontal
-            <input type="radio" name="layout" value="vertical"> Vertical
+            <div id = "radioStuff">
+            <input type="radio" name="layout" value="horizontal" class="radioButton"
+              <?php
+              
+                if ($_GET['layout'] == "horizontal") {
+                    echo " checked";
+                }
+                ?>
+                >Horizontal
+            <input type="radio" name="layout" value="vertical" class="radioButton"
+            <?= ($_GET['layout'] == "vertical")?" checked":"" ?>  > Vertical
+            </div>
+                
+         
+
             <select name = "category">
                 <option value="">Select One</option>
                 <option>Sea</option>
@@ -80,6 +92,7 @@ if ((isset($_GET["keyword"])) && (($_GET["keyword"] != "") ||($_GET["category"] 
                 <option>Mountain</option>
                 <option>Snow</option>
                 <option>Otter</option>
+            <option  <?= ($_GET['category'] == "Sky")?" selected":"" ?> >Sky</option>
             </select>
             <?php
             if($_GET["keyword"] == ""){
