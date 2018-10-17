@@ -87,12 +87,13 @@ function quizSubmit(){
         
         <h1 id="title">How well can you do on this random quiz?</h1>
         
-        <div>
+        
             <form method="GET">
+                <div>
                 <h2>Question 1: What is 2 + 2?</h2>
                 <input type="number" name="math" placeholder="#" value="<?php echo isset($_GET["math"]) ? $_GET["math"] : '' ?>"/>
                 <!-- Source from where this code helped me https://stackoverflow.com/questions/5198304/how-to-keep-form-values-after-post -->
-                </div> 23 <di3></di3>
+                </div> 
                 
                 <hr>
                 <div>
