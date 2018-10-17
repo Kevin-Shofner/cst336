@@ -77,7 +77,7 @@ function quizSubmit(){
 
 <!DOCTYPE html>
 
-<html>
+<html lang ="en">
     <head>
         <title>Homework 3: Quiz</title>
         <link rel="stylesheet" href="css/styles.css" type="text/css" />
