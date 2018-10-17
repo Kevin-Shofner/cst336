@@ -1,0 +1,72 @@
+.correct{
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+#yourScore{
+    color : blue;
+}
+
+body {
+    text-align: center;
+}
+
+#footer {
+    color:black;
+}
+body {
+    background-image: url("../img/theRiddler.png");
+    color: white;
+}
+
+#bad {
+    color:red;
+    font-family: serif;
+}
+
+#congrats {
+    color: cyan;
+    font-family: cursive;
+    text-shadow: 2px 2px 4px cyan;
+}
+
+#okay {
+    color: white;
+    font-family: monospace;
+}
+
+.link {
+    color: blue;
+}
+
+#important {
+    color: red;
+    text-shadow: 3px 3px 10px red;
+}
+
+#title {
+    color :cyan;
+    text-shadow: 6px 6px 6px cyan
+}
+
+hr {
+    border-color : green;
+    height : 10px;
+    width : 1200px;
+}
+
+#vader {
+    width : 55%;
+    height : 55%;
+}
+
+#library {
+    width : 55%;
+    height : 50%;
+}
+summary {
+    font-family: cursive;
+}
