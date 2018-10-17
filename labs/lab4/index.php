@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <?php
 
 $backgroundImage = "img/sea.jpg";
