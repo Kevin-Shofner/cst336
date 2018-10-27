@@ -10,10 +10,7 @@ function displayCategories() {
     $stmt = $dbConn->prepare($sql);
     $stmt->execute();
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);
-    //print_r($records);
-    //echo "<hr>";
-    //echo $records[2] . "<br>";
-    //echo $records[1]['catDescription'] . "<br>";
+    
     
     foreach ($records as $record) {
         echo "<option value='".$record['catId']."'>" . $record['catName'] . "</option>";
@@ -26,11 +23,8 @@ function filterProducts() {
     $namedParameters = array();
     $product = $_GET['productName'];
     
-    //This SQL works but it doesn't prevent SQL INJECTION (due to the single quotes)
-    //$sql = "SELECT * FROM om_product
-    //        WHERE productName LIKE '%$product%'";
-    
-
+  
+  
     $sql = "SELECT * FROM om_product WHERE 1"; //Gettting all records from database
     
     if (!empty($product)){
@@ -43,8 +37,10 @@ function filterProducts() {
         //This SQL prevents SQL INJECTION by using a named parameter
          $sql .=  " AND catId =  :category";
           $namedParameters[':category'] = $_GET['category'] ;
-
     }
+    
+    //echo $sql;
+    
     if (isset($_GET['orderBy'])) {
         
         if ($_GET['orderBy'] == "productPrice") {
@@ -57,16 +53,20 @@ function filterProducts() {
         
         
     }
-    
-
-    
-    
-    
 
     $stmt = $dbConn->prepare($sql);
     $stmt->execute($namedParameters);
     $records = $stmt->fetchAll(PDO::FETCH_ASSOC);  
-    print_r($records);
+
+    
+    foreach ($records as $record) {
+        
+        echo "<a href='productInfo.php?productId=".$record['productId']."'>";
+        echo $record['productName'];
+        echo "</a> ";
+        echo $record['productDescription'] . " $" .  $record['price'] .   "<br>";   
+        
+    }
 
 
 }
@@ -77,15 +77,17 @@ function filterProducts() {
 <html>
     <head>
         <title> Lab 6: Ottermart Product Search</title>
+                <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
     </head>
     <body>
         
-        <h1> Ottermart </h1>
-        <h2> Product Search </h2>
+        <h1 id = 'mainMenu'> Ottermart Product Search </h1>
         
-        <form>
+        <form id = "formCenter">
             
             Product: <input type="text" name="productName" placeholder="Product keyword" /> <br />
+            <br>
             
             Category: 
             <select name="category">
@@ -93,20 +95,25 @@ function filterProducts() {
                <?=displayCategories()?>
             </select>
             <br>
-             Price: From: <input type="text" name="priceFrom"  /> 
-             To: <input type="text" name="priceTo"  />
-             <br>
-             Order By:
-             
-            Price <input type="radio" name="orderBy" value="productPrice">
-            Name <input type="radio" name="orderBy" value="productName">
             <br>
-            
+            Price: From: <input type="text" name="priceFrom"  /> 
+             To: <input type="text" name="priceTo"  />
+            <br>
+            <br>
+            Order By:
+           <strong> Price </strong> <input type="radio" name="orderBy" value="productPrice">
+            <strong>Name</strong> <input type="radio" name="orderBy" value="productName">
+            <br>
+            <br>
             <input type="submit" name="submit" value="Search!"/>
         </form>
-        
+        <br>
+        <hr>
         
         <?= filterProducts() ?>
+        
+    
+
 
     </body>
 </html>
