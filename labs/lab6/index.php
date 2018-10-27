@@ -38,7 +38,15 @@ function filterProducts() {
          $sql .=  " AND catId =  :category";
           $namedParameters[':category'] = $_GET['category'] ;
     }
-    
+   if(!empty($_GET['priceFrom'])){
+       $sql .= " AND price >= :priceFrom";
+       $namedParameters[":priceFrom"] = $_GET['priceFrom'];
+   }
+   
+   if (!empty($_GET['priceTo'])) {
+       $sql .= " AND price <= :priceTo";
+       $namedParameters[":priceTo"] = $_GET['priceTo'];
+   }
     //echo $sql;
     
     if (isset($_GET['orderBy'])) {
@@ -96,8 +104,8 @@ function filterProducts() {
             </select>
             <br>
             <br>
-            Price: From: <input type="text" name="priceFrom"  /> 
-             To: <input type="text" name="priceTo"  />
+            Price: From: <input type="number" name="priceFrom"  /> 
+             To: <input type="number" name="priceTo"  />
             <br>
             <br>
             Order By:
