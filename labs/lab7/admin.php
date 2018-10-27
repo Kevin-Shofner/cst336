@@ -1,0 +1,29 @@
+<?php
+session_start();
+
+
+function displayAllProducts() {
+    
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Admin Main Page </title>
+    </head>
+    <body>
+        
+        <h1> ADMIN SECTION - OTTERMART </h1>
+        
+         <h3>Welcome <?= $_SESSION['adminFullName'] ?> </h3>
+
+
+        <br><br>
+        
+        <?= displayAllProducts() ?>
+        
+
+    </body>
+</html>
