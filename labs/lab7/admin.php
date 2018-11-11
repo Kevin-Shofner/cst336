@@ -28,7 +28,7 @@ validateSession();
                 
                 //alert();
                 //prompt();
-                return confirm("Really??");
+                return confirm("Do you want to delete this product??");
                 
             }
             
