@@ -154,8 +154,8 @@ function go(){
 	function count() {
 		var winCount = document.getElementById('winCount');
 		var lossCount = document.getElementById("lossCount");
-		winCount.innerHTML = ("Player wins: " + wins);
-		lossCount.innerHTML = ("Computer wins: " + losses);
+		winCount.innerHTML = ("Player Wins: " + wins);
+		lossCount.innerHTML = ("Computer Wins: " + losses);
 	}
 	
 	//alert(playerChoice + ", " + computerChoice)
