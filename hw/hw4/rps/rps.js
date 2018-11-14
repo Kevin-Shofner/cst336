@@ -5,7 +5,8 @@ var btnScissors;
 var btnGo;
 var computerChoice;
 var playerChoice;
-
+var wins;
+var losses;
 function init(){
 	imgPlayer = document.getElementById("imgPlayer");
 	btnRock = document.getElementById("btnRock");
@@ -13,6 +14,8 @@ function init(){
 	btnScissors = document.getElementById("btnScissors");
 	btnGo = document.getElementById("btnGo");
 	deselectAll();
+	wins = 0;
+	losses = 0;
 }
 	
 
@@ -68,11 +71,13 @@ function go(){
 		//	alert('YOU WIN');
 		txtEndTitle.innerHTML = "Paper covers Rock";
 		txtEndMessage.innerHTML = 'YOU WIN';
+		wins += 1;
 		}
 		else if(playerChoice == 'scissors'){
 			//alert("YOU LOSE");
 			txtEndTitle.innerHTML = "Rock smashes Scissors";
 			txtEndMessage.innerHTML = "YOU LOSE";
+			losses++;
 		}
 	}
 	
@@ -84,6 +89,7 @@ function go(){
 			//alert('YOU LOSE');
 			txtEndTitle.innerHTML = "Paper covers Rock";
 			txtEndMessage.innerHTML = "YOU LOSE";
+			losses++;
 		}
 		else if(playerChoice == "paper"){
 			//alert('TIE');\
@@ -94,6 +100,7 @@ function go(){
 			//alert("YOU WIN");
 			txtEndTitle.innerHTML = "Scissors cuts Paper";
 			txtEndMessage.innerHTML = "YOU WIN";
+			wins++;
 		}
 	}
 
@@ -106,11 +113,14 @@ function go(){
 			//alert('YOU WIN');
 			txtEndTitle.innerHTML = "Rock smashes Scissors";
 			txtEndMessage.innerHTML = "YOU WIN";
+			wins++;
 		}
 		else if(playerChoice == "paper"){
 			//alert('YOU LOSE');
 			txtEndTitle.innerHTML = "Scissors cuts Paper";
 			txtEndMessage.innerHTML = "YOU LOSE";
+			losses++;
+			
 		}
 		else if(playerChoice == 'scissors'){
 			//alert("TIE");
@@ -138,7 +148,14 @@ function go(){
 		
 		imgPlayer.src = 'images/question.png';
 		document.getElementById('imgComputer').src = 'images/question.png';
+		count();
 
+	}
+	function count() {
+		var winCount = document.getElementById('winCount');
+		var lossCount = document.getElementById("lossCount");
+		winCount.innerHTML = ("Player wins: " + wins);
+		lossCount.innerHTML = ("Computer wins: " + losses);
 	}
 	
 	//alert(playerChoice + ", " + computerChoice)
