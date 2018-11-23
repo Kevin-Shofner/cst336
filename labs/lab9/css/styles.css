@@ -1,0 +1,45 @@
+body{
+       text-align: center;   
+       background-image: url("../img/bluepage.png"); 
+       /*  image from http://www.purebeads.com/images/blue.png */
+       font-size:  16px;
+       font-family: serif;
+       
+ 
+}
+ .error{
+      color: red;
+      font-family: cursive;
+      font-weight:  bold;
+      font-size: 20px;
+            }
+            
+     
+            
+form {
+       background-color: white;
+}
+
+#latitude, #longitude, #city{
+        font-family: sans-serif;
+        font-size: 16px;
+        font-style: italic;
+}
+
+h1{
+ color: white;
+}
+legend {
+ font-size: 30px;
+ font-weight: bold;
+ font-family: monospace;
+}
+fieldset{
+ border-color: black;
+ border-style: solid;
+ padding-bottom:  30px;
+}
+#submit {
+ font-size: 40px;
+ font-family: cursive;
+}
