@@ -38,6 +38,7 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
     <head>
         <title> Admin Section: Add New Product </title>
           <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+                <link rel="stylesheet" href="css/styles.css" type="text/css" />
 
         <script>
              $("document").ready(function() {
@@ -74,14 +75,14 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
             });//zipEvent
         </script>
     </head>
-    <body>
+    <body id = "addPage">
         
         <h1> Adding New Product </h1>
         
-        <form>
-           Product name: <input type="text" name="name"><br>
-           Description: <textarea name="description" cols="50" rows="4"></textarea><br>
-           Price: <input type="text" name="price"><br>
+        <form id = "addForm">
+           Product name: <input type="text" name="name"><br><br>
+           Description: <textarea name="description" cols="50" rows="4"></textarea><br><br>
+           Price: <input type="text" name="price"><br><br>
            Category: 
            <select name="categoryId">
               <option value="">Select One</option>
@@ -96,10 +97,10 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
               }
               
               ?>
-           </select> <br />
-           Set Image Url: <input type="text" name="image"><br>
+           </select> <br /><br>
+           Set Image Url: <input type="text" name="image"><br><br>
            
-             Zip added from: <input type = "text" name= "zip" id = "zip">
+             Zip added from: <input type = "text" name= "zip" id = "zip"> <br>
            <input type = "hidden" id = "editedBy" name = "editedBy" value= "Added from an unknown location." >        
         <br>
 
@@ -107,14 +108,20 @@ if (isset($_GET['addProduct'])) { //checks whether the form was submitted
 
 
 
-            <br><br>
-            <a href = "admin.php">Back to Admin Page</a>
+           
         
            
            <input type="submit" name="addProduct" value="Add Product">
+           
+           
+            <br><br>
+            <a href = "admin.php">Back to Admin Page</a>
+        
                        </form>
 
         </form>
+
+
 
     </body>
 </html>

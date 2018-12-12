@@ -49,6 +49,8 @@ if (isset($_GET['productId'])) {
     <head>
         <title> Update Products! </title>
             <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+                            <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
 
         <script>
              $("document").ready(function() {
@@ -85,15 +87,15 @@ if (isset($_GET['productId'])) {
             });//zipEvent
         </script>
     </head>
-    <body>
+    <body id = "updatePage">
 
         <h1> Updating a Product </h1>
         
-        <form>
+        <form id = "updateForm">
             <input type="hidden" name="productId" value="<?=$productInfo['productId']?>">
-           Product name: <input type="text" name="name" value="<?=$productInfo['name']?>"><br>
-           Description: <textarea name="description" cols="50" rows="4"><?=$productInfo['description']?> </textarea><br>
-           Price: <input type="text" name="price" value="<?=$productInfo['price']?>"><br>
+           Product name: <input type="text" name="name" value="<?=$productInfo['name']?>"><br><br>
+           Description: <textarea name="description" cols="50" rows="4"><?=$productInfo['description']?> </textarea><br><br>
+           Price: <input type="text" name="price" value="<?=$productInfo['price']?>"><br><br>
            Category: 
            <select name="categoryId">
               <option value="">Select One</option>
@@ -110,22 +112,28 @@ if (isset($_GET['productId'])) {
               }
               
               ?>
-           </select> <br />
+           </select> <br /><br>
            Set Image Url: <input type="text" name="image" value="<?=$productInfo['image']?>"><br>
            <br>
-           Zip edited from: <input type = "text" name= "zip" id = "zip">
+           Zip edited from: <input type = "text" name= "zip" id = "zip"><br>
            <input type = "hidden" id = "editedBy" name = "editedBy" >        
         <br>
          <?=$productInfo['editedBy']?>
          
          <br>
                     <input type="submit" name="updateProduct" value="Update Product">
-
+                    <br><br>
+<a href = "admin.php">Back to Admin Page</a>
+            
             </form>
 
 
             <br><br>
-            <a href = "admin.php">Back to Admin Page</a>
+
+            
+            
+            
+
         
     </body>
 </html>

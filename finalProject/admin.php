@@ -21,7 +21,8 @@ validateSession();
             }
         </style>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" type="text/css" />
-        
+                        <link rel="stylesheet" href="css/styles.css" type="text/css" />
+
         <script>
         
             function confirmDelete() {
@@ -41,18 +42,23 @@ validateSession();
         </script>
     
     </head>
-    <body>
+    <body id = "adminPage">
         
-        <h1> ADMIN SECTION - OTTERMART </h1>
+        <h1> Admin Section - Video Rental Store </h1>
         
          <h3>Welcome <?= $_SESSION['adminFullName'] ?> from <?= $_SESSION['adminZip'] ?> </h3>
 
           <form action="addProduct.php">
               <input type="submit" value="Add New Product">
+              
           </form>
          <form action="logout.php">
               <input type="submit" value="Logout">
           </form>
+          <form action = "adminStats.php">
+              <input type = "submit" value= "Database Stats">
+          </form>
+
 
            <br><br>
         

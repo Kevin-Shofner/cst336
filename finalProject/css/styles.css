@@ -1,4 +1,81 @@
-indexBody {
+#indexBody {
     text-align: center;
+    background-color: #0ef9f2;
 
+}
+
+#login {
+    text-align: center;
+    background-color: grey;
+}
+
+#userpage {
+    text-align: center;
+    background-image: url("../img/articBackground2.jpg");
+}
+#userTable,td,th {
+    text-align: center;
+    border: 1px solid black;
+    background-color: #f9f9f9;
+    padding: 15px;
+}
+
+#addPage{
+    text-align: center;
+    background-color: #0ef97b;
+}
+
+#addForm, #updateForm{
+    position: absolute;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+    width: 500px;
+    left: 35%;
+}
+
+#updatePage {
+    text-align: center;
+    background-color: #9ebdef;
+}
+
+#statsPage{
+    text-align: center;
+    background-color: #d85454;
+}
+
+#statsDiv{
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    
+    left:37%;
+    padding: 20px;
+    width: 400px;
+    background-color: white;
+}
+
+#divIndex {
+    text-align: center;
+    position: absolute;
+    margin: auto;
+    
+    left:42%;
+    padding: 20px;
+    width: 200px;
+    background-color: white;
+}
+
+#loginDiv{
+     text-align: center;
+    position: absolute;
+    margin: auto;
+    
+    left:40%;
+    padding: 20px;
+    background-color: white;
+}
+
+#adminPage {
+    background-color: white;
 }
